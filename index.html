@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shah Rose - Luxury Fragrance</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #fff;
+      color: #111;
+    }
+    header {
+      background: #000;
+      padding: 1.5rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    header img {
+      height: 70px;
+    }
+    nav a {
+      margin-left: 1.5rem;
+      text-decoration: none;
+      color: #fff;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #c89b3c;
+    }
+    .hero {
+      background: url('https://images.unsplash.com/photo-1607083209822-b6a6c739eb02?auto=format&fit=crop&w=1600&q=80') no-repeat center center/cover;
+      height: 90vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      color: #fff;
+      text-align: center;
+      padding: 2rem;
+    }
+    .hero h1 {
+      font-size: 4rem;
+      font-family: 'Playfair Display', serif;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      font-size: 1.4rem;
+      max-width: 700px;
+    }
+    .section {
+      padding: 4rem 2rem;
+      text-align: center;
+      background: #1a1a1a;
+      color: #fff;
+    }
+    .section:nth-child(even) {
+      background: #111;
+    }
+    .section h2 {
+      font-size: 2.2rem;
+      color: #c89b3c;
+      margin-bottom: 1rem;
+    }
+    .section p {
+      max-width: 800px;
+      margin: 0 auto;
+      color: #ccc;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+    .product-card {
+      background: #000;
+      padding: 1rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      transition: transform 0.2s ease;
+      color: #fff;
+    }
+    .product-card:hover {
+      transform: translateY(-5px);
+    }
+    .product-card img {
+      width: 100%;
+      border-radius: 8px;
+    }
+    .product-card h3 {
+      margin-top: 1rem;
+      font-size: 1.3rem;
+      font-weight: 600;
+    }
+    .product-card p {
+      font-size: 1rem;
+      color: #aaa;
+    }
+    .whatsapp-button {
+      display: inline-block;
+      margin-top: 2rem;
+      padding: 0.75rem 2rem;
+      background: #25d366;
+      color: #fff;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .whatsapp-button:hover {
+      background: #128c7e;
+    }
+    footer {
+      background: #000;
+      color: #aaa;
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="/mnt/data/WhatsApp%20Image%202025-07-17%20at%209.59.03%20PM%20(1).jpeg" alt="Shah Rose Logo" />
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#products">Collection</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <h1>Shah Rose</h1>
+    <p>Luxury Perfume Crafted to Impress</p>
+  </section>
+
+  <section class="section" id="about">
+    <h2>About Shah Rose</h2>
+    <p>Shah Rose is a premium fragrance brand inspired by royalty, love, and elegance. Our mission is to deliver unforgettable scents with bold identity, timeless character, and lasting quality.</p>
+  </section>
+
+  <section class="section" id="products">
+    <h2>Our Collection</h2>
+    <div class="products">
+      <div class="product-card">
+        <img src="/mnt/data/WhatsApp%20Image%202025-07-17%20at%209.59.02%20PM.jpeg" alt="Romance King" />
+        <h3>Romance King</h3>
+        <p>The signature scent of power and passion.</p>
+      </div>
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1610634214081-c52a1f6461d5?auto=format&fit=crop&w=600&q=80" alt="Rose Gold" />
+        <h3>Rose Gold</h3>
+        <p>Romantic. Elegant. Classic.</p>
+      </div>
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1610465299995-8cd0de481721?auto=format&fit=crop&w=600&q=80" alt="Amber Musk" />
+        <h3>Amber Musk</h3>
+        <p>Warm. Soft. Memorable.</p>
+      </div>
+    </div>
+    <a class="whatsapp-button" href="https://wa.me/923001234567" target="_blank">Order Now on WhatsApp</a>
+  </section>
+
+  <footer id="contact">
+    <p>&copy; 2025 Shah Rose. All rights reserved.</p>
+    <p>Email: shahrose@example.com</p>
+  </footer>
+</body>
+</html>
